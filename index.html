@@ -1,51 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Company Placeholder</title>
-        <style>
-            body {
-                background-color: rgb(96, 160, 255);
-                font-family: "Ubuntu", sans-serif;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                flex-direction: column;
-                
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background with List</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
             }
-            img {
-                border-radius: 8px;
-                margin-top: 20px;
-                width: 300px;
-                height: 300px;
+            50% {
+                background-position: 100% 50%;
             }
-            .toptext, .actualtext {
-                margin: 20px;
-                 
+            100% {
+                background-position: 0% 50%;
             }
-            .signupforwork {
-                background-color: aliceblue;
-                height: auto;
-                width: 90%;
-                max-width: 700px;
-                padding: 20px;
-                border-radius: 10%;
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="toptext">Borem Dipsum, Quadro, Pedro, Placeholderrr.</div>
-        <div class="actualtext">
-            In [Company name here] we do [Short Company Description here] and [Greeting Here].
-            <br> Amazing test feature: <input type="email" placeholder="Enter your email">
-        </div>
-        <div class="signupforwork">
-            <p>Email for signup:</p>
-            <input type="email" id="signup-email" placeholder="example@gmail.com"><br>
-            <p>Why should we hire <strong>You?</strong></p>
-            <textarea placeholder="I can do this and this..."></textarea>
-        </div>
-    </body>
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        li {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>20 Things I Like</h1>
+    <ul>
+        <li>Music</li>
+        <li>Movies</li>
+        <li>Programming</li>
+        <li>Cooking</li>
+        <li>Gaming</li>
+        <li>Traveling</li>
+        <li>Photography</li>
+        <li>Reading</li>
+        <li>Writing</li>
+        <li>Art</li>
+        <li>Sports</li>
+        <li>Nature</li>
+        <li>Technology</li>
+        <li>History</li>
+        <li>Science</li>
+        <li>Learning Languages</li>
+        <li>Exploring Cultures</li>
+        <li>Fitness</li>
+        <li>Pets</li>
+        <li>Friendship</li>
+    </ul>
+</body>
 </html>
